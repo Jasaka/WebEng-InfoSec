@@ -5,7 +5,10 @@ require 'vendor/autoload.php';
 
 
 
-echo " <p> hello Word  </p>";
+echo " <p> hello Word hier bin ich </p>";
+
+
+echo "<h2> Registrierung Bausteine </h2>";
 
 $identity = $_POST['username'];
 $password = $_POST['password'];
@@ -117,63 +120,63 @@ $key_size2 =  strlen($privkey_user_enc);
 echo "<p></p>";
 echo "Key size: " . $key_size2 . "\n";
 
-echo "<p></p>";
+echo "<p>hier bin ich 1ste response </p>";
+
+
+
+
+//hier müsssen wir noch schauen wie wir post und update hinbekommen !!!
+$fields = array(
+    'identity' => $identity,
+    'salt_masterkey' => $salt_masterkey,
+    'pubkey_user' => $pubkey_user,
+    'privkey_user_enc' => $privkey_user_enc
+    );
+
+$url = "http://localhost/messenger/serverRest/user/1/";
+
+
+$response = \Httpful\Request::get($url)
+
+
+    ->body(http_build_query($fields))
+
+    ->send();
+
+
+
+echo "<p> hier bin ich 2</p>";
+echo $response;
+//
+echo "<p> hier bin ich 3</p>";
+var_dump($response);
+
+$myresponse = json_decode($response,true);
+
+echo $myresponse;
+
+print_r($myresponse["salt_masterkey"]);
+
+
+
+
+
+
+
+echo "<h2> anmeldung Bausteine </h2>";
 
 
 $uri = "http://localhost/messenger/serverRest/user/1/";
 
 $response = \Httpful\Request::get($uri)
-    // Expect HTML responses if u comment ->expectsJson()
-    ->expectsJson()
+
     ->send();
 
-//echo "<p> hier bin ich 1</p>";
+echo "<p> hier bin ich 1</p>";
 echo $response;
 
+$myresponse = json_decode($response,true);
 
-
-//echo "<p> get salt_masterkey from response</p>";
-
-
-
-
-
-//
-//
-//
-//
-////hier müsssen wir noch schauen wie wir post und update hinbekommen !!!
-//$fields = array(
-//    'identity' => $identity,
-//    'salt_masterkey' => $salt_masterkey,
-//    'pubkey_user' => $pubkey_user,
-//    'privkey_user_enc' => $privkey_user_enc
-//    );
-//
-//$url = "http://localhost/messenger/serverRest/user/message/test/";
-//
-//
-//$response = \Httpful\Request::post($url)
-//
-//    ->body(http_build_query($fields))
-//    ->send();
-//
-//
-//echo "<p> hier bin ich 2</p>";
-//echo $response;
-////
-//echo "<p> hier bin ich 3</p>";
-////var_dump($response);
-//
-//$myresponse = json_decode($response,true);
-//
-//print_r($myresponse["identity"]);
-//
-
-
-
-
-
-
+print_r($myresponse["salt_masterkey"]);
 
 ?>

@@ -103,6 +103,11 @@ if($method == 'DELETE' && $view == "user" && $user_id != null)
 	$userRestHandler->deleteUserDb($user_id);
 }
 
+if($method == 'POST' && $view == "user" && $user_id != null)
+{
+	$userRestHandler = new UserRestHandler();
+	$userRestHandler->getUserDb($user_id);
+}
 
 
 
