@@ -1,0 +1,11 @@
+# Turn rewrite engine on
+Options +FollowSymlinks
+RewriteEngine on
+
+# map neat URL to internal URL
+RewriteRule ^user/([0-9]+)/$  RestController.php?view=user&user_id=$1 [nc,qsa]
+RewriteRule ^user/list/$   RestController.php?view=userAll [nc,qsa]
+#RewriteRule ^user/message/([0-9]+)/$   RestController.php?view=messageSingle&message_id=$1 [nc,qsa]
+#RewriteRule ^user/message/list/$   RestController.php?view=messageAll
+
+#RewriteRule ^user/message/test/$   test.php?request=$1 [QSA,NC,L]
