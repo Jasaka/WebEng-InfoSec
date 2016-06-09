@@ -43,5 +43,3 @@ class MyAPI extends API
         }
     }
 }
-
->
