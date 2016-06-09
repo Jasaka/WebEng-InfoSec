@@ -6,42 +6,6 @@ class UserRestHandler extends SimpleRest {
 	
 	
 
-	//später löschen getAllUser() + getUser($id)
-	
-	//get All user ==> noch statisch 
-	function getAllUser()
-	{
-		$user = new User();
-		$rawData = $user->getAllUser();
-
-		$this->response($rawData);
-	}
-
-	//get user bei user_id ==> statisch
-	public function getUser($id)
-	{
-		$user = new User();
-		$rawData = $user->getUser($id);
-
-		$this->response($rawData);
-	}
-
-	
-	
-	
-	
-	
-	//test function
-	public function getMessage($user_id)
-	{
-		$user = new User();
-		$rawData = $user->getMessage($user_id);
-
-		$this->response($rawData);
-	}
-	
-	
-	
 
 	//delete user by user_id ==> dynamisch
 	public function deleteUserDb($user_id)
@@ -61,7 +25,7 @@ class UserRestHandler extends SimpleRest {
 		$this->response($rawData);
 	}
 
-	
+
 
 
 
@@ -69,20 +33,24 @@ class UserRestHandler extends SimpleRest {
 
 	//encode data to text/Html
 	public function encodeHtml($responseData) {
-	
+
 		$htmlResponse = "<table border='1'>";
 		foreach($responseData as $key=>$value) {
     			$htmlResponse .= "<tr><td>". $key. "</td><td>". $value. "</td></tr>";
 		}
 		$htmlResponse .= "</table>";
-		return $htmlResponse;		
+		return $htmlResponse;
 	}
+
+
 
 	//encode data to application/json
 	public function encodeJson($responseData) {
 		$jsonResponse = json_encode($responseData);
-		return $jsonResponse;		
+		return $jsonResponse;
 	}
+
+
 
 	//encode data to application/xml
 	public function encodeXml($responseData) {
@@ -124,12 +92,6 @@ class UserRestHandler extends SimpleRest {
 
 
 
-	public function getRequest()
-	{
-		return "it works";
-		//$rawData = print_r ($_REQUEST);
-		//$this->response($rawData);
-	}
 
 }
 ?>
