@@ -1,5 +1,6 @@
 <?php
 require_once("UserRestHandler.php");
+require_once ("MessageRestHandler.php");
 
 $view = "";
 if(isset($_GET["view"]))
@@ -13,9 +14,184 @@ if(isset($_GET["user_id"]))
 $password = "";
 
 
-$request = '';
-if(isset($_GET["request"]))
-	$request = $_GET["request"];
+//$request = '';
+//if(isset($_GET["request"]))
+//	$request = $_GET["request"];
+
+$message_id = '';
+if(isset($_GET["message_id"]))
+	$request = $_GET["message_id"];
+
+$test_id = '';
+if(isset($_GET["test_id"]))
+	$request = $_GET["test_id"];
+
+
+
+
+
+/**
+ * Property: method
+ * The HTTP method this request was made in, either GET, POST, PUT or DELETE
+ */
+$method = $_SERVER['REQUEST_METHOD'];
+
+//user url reaction
+
+//get user
+if($method == 'GET' && $view == "user" && $user_id != null)
+{
+	$userRestHandler = new UserRestHandler();
+	$userRestHandler->getUserDb($user_id);
+}
+
+//delete user
+if($method == 'DELETE' && $view == "user" && $user_id != null)
+{
+	$userRestHandler = new UserRestHandler();
+	$userRestHandler->deleteUserDb($user_id);
+}
+
+//muss noch angepasst werden ==> innere methode
+//save user
+if($method == 'POST' && $view == "user" && $user_id != null)
+{
+	$userRestHandler = new UserRestHandler();
+	$userRestHandler->getUserDb($user_id);
+}
+
+
+
+
+
+
+
+
+//Mockup server answer for /reg
+if ($method == 'POST' && $view == "registration")
+{
+	$id = 1;
+	$messageRestHandler = new MessageRestHandler();
+	$messageRestHandler->getMessage($id);
+
+}
+
+
+//Mockup server answer for /reg
+if ($method == 'POST' && $view == "login")
+{
+	$id = 2;
+	$messageRestHandler = new MessageRestHandler();
+	$messageRestHandler->getMessage($id);
+
+}
+
+//Mockup server answer for /reg
+if ($method == 'POST' && $view == "pub_key")
+{
+	$id = 3;
+	$messageRestHandler = new MessageRestHandler();
+	$messageRestHandler->getMessage($id);
+
+}
+
+
+//Mockup server answer for /reg
+if ($method == 'POST' && $view == "messageGetPostDel")
+{
+	$id = 4;
+	$messageRestHandler = new MessageRestHandler();
+	$messageRestHandler->getMessage($id);
+
+}
+
+//Mockup server answer for /reg
+if ($method == 'POST' && $view == "messageDelAll")
+{
+	$id = 5;
+	$messageRestHandler = new MessageRestHandler();
+	$messageRestHandler->getMessage($id);
+
+}
+
+//Mockup server answer for /reg
+if ($method == 'POST' && $view == "delaccount")
+{
+	$id = 6;
+	$messageRestHandler = new MessageRestHandler();
+	$messageRestHandler->getMessage($id);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//message url reaction for one message
+
+//get latest message
+if($method == 'GET' && $view == "messageSingle" && $user_id != null)
+{
+	$userRestHandler = new UserRestHandler();
+	$userRestHandler->getMessageDb($user_id);
+}
+
+//delete  message by id
+if($method == 'DELETE' && $view == "messageSingle" && $message_id != null)
+{
+	$userRestHandler = new UserRestHandler();
+	$userRestHandler->deleteMessageDb($message_id);
+}
+
+//muss noch angepasst werden ==> innere methode
+//save message
+if($method == 'POST' && $view == "messageSingle" && $user_id != null)
+{
+	$userRestHandler = new UserRestHandler();
+	$userRestHandler->saveMessageDb($user_id);
+}
+
+
+//message url reaction for all message
+
+if($method == 'GET' && $view == "messageAll" && $user_id != null)
+{
+	$messageRestHandler = new MessageRestHandler();
+	$messageRestHandler->getMessageDb($user_id);
+}
+
+if($method == 'DELETE' && $view == "messageAll" && $user_id != null)
+{
+	$userRestHandler = new UserRestHandler();
+	$userRestHandler->deleteAllMessageDb($user_id);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -78,33 +254,6 @@ $userRestHandler = new UserRestHandler();
 $userRestHandler->getRequest($methodTest,$endpoint, $verb, $args);
 
 */
-
-
-
-/**
- * Property: method
- * The HTTP method this request was made in, either GET, POST, PUT or DELETE
- */
-$method = $_SERVER['REQUEST_METHOD'];
-
-
-
-
-if($method == 'GET' && $view == "user" && $user_id != null)
-{
-	$userRestHandler = new UserRestHandler();
-	$userRestHandler->getUserDb($user_id);
-}
-
-
-if($method == 'DELETE' && $view == "user" && $user_id != null)
-{
-	$userRestHandler = new UserRestHandler();
-	$userRestHandler->deleteUserDb($user_id);
-}
-
-
-
 
 
 
