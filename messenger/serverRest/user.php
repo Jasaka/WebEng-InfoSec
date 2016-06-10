@@ -39,7 +39,7 @@ Class User {
         $mysqli = $this->connectDb();
 
 
-        $result = $mysqli->query("SELECT user_id, identity, salt_masterkey, privkey_user_enc FROM users WHERE user_id = $user_id");
+        $result = $mysqli->query("SELECT user_id, identity, salt_masterkey, privkey_user_enc, pubkey_user FROM users WHERE user_id = $user_id");
         $user = $result->fetch_assoc();
         //$user = $row['user_id']." ".$row['identity']." ".$row['salt_masterkey'];
         return $user;

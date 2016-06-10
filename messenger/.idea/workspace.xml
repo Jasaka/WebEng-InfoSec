@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c84fb91c-7999-4e8f-9c96-d200e5fa78b0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Application/proto/API.class.php" afterPath="$PROJECT_DIR$/../Application/proto/API.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Application/proto/api.php" afterPath="$PROJECT_DIR$/../Application/proto/api.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/formHandler.php" afterPath="$PROJECT_DIR$/client/formHandler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/serverRest/RestController.php" afterPath="$PROJECT_DIR$/serverRest/RestController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/serverRest/UserRestHandler.php" afterPath="$PROJECT_DIR$/serverRest/UserRestHandler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/serverRest/user.php" afterPath="$PROJECT_DIR$/serverRest/user.php" />
-    </list>
+    <list default="true" id="df6bf484-0fa6-40e3-967a-dcc800d024ce" name="Default" comment="" />
     <ignored path="messenger.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -24,26 +16,6 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="testInternetHandler.php" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/serverRest/testInternetHandler.php">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="182">
-                    <caret line="39" column="3" selection-start-line="39" selection-start-column="3" selection-end-line="39" selection-end-column="3" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="messenger" />
@@ -53,19 +25,53 @@
       <file leaf-file-name=".htaccess" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/serverRest/.htaccess">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="300">
+              <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RestController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RestController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/serverRest/RestController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1155">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="420">
+              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <folding>
+                <marker date="1465564301000" expanded="true" signature="3984:4261" ph="..." />
+                <marker date="1465564301000" expanded="true" signature="3991:4261" ph="..." />
+                <marker date="1465564301000" expanded="true" signature="3998:4261" ph="..." />
+                <marker date="1465564301000" expanded="true" signature="4005:4261" ph="..." />
+                <marker date="1465564301000" expanded="true" signature="4025:4261" ph="..." />
+                <marker date="1465564301000" expanded="true" signature="4032:4261" ph="..." />
+                <marker date="1465564301000" expanded="true" signature="5597:5659" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MessageRestHandler.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/serverRest/MessageRestHandler.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="message.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/serverRest/message.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="379">
+              <caret line="40" column="95" selection-start-line="40" selection-start-column="95" selection-end-line="40" selection-end-column="95" />
+              <folding>
+                <element signature="e#6#62#0#PHP" expanded="true" />
+                <marker date="1465564596000" expanded="true" signature="391:422" ph="SELECT messa... message" />
+                <marker date="1465564596000" expanded="true" signature="391:429" ph="SELECT messa... message" />
+                <marker date="1465564596000" expanded="true" signature="391:438" ph="SELECT messa... message" />
+                <marker date="1465564596000" expanded="true" signature="391:439" ph="SELECT messa... message" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -73,8 +79,8 @@
       <file leaf-file-name="UserRestHandler.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/serverRest/UserRestHandler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="870">
-              <caret line="59" column="27" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
+            <state relative-caret-position="124">
+              <caret line="48" column="51" selection-start-line="48" selection-start-column="51" selection-end-line="48" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -83,22 +89,13 @@
       <file leaf-file-name="user.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/serverRest/user.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="33" column="5" selection-start-line="28" selection-start-column="4" selection-end-line="33" selection-end-column="5" />
+            <state relative-caret-position="435">
+              <caret line="49" column="40" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="40" />
               <folding>
-                <marker date="1465411296000" expanded="true" signature="774:860" ph="SELECT user_... " />
-                <marker date="1465411296000" expanded="true" signature="1236:1271" ph="DELETE FROM " />
+                <element signature="e#6#62#0#PHP" expanded="true" />
+                <marker date="1465485212000" expanded="true" signature="774:873" ph="SELECT user_... " />
+                <marker date="1465485212000" expanded="true" signature="1249:1284" ph="DELETE FROM " />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="formHandler.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/formHandler.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="140" column="37" selection-start-line="140" selection-start-column="37" selection-end-line="140" selection-end-column="37" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -106,8 +103,18 @@
       <file leaf-file-name="test.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/serverRest/test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="244">
+              <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="formHandler.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/formHandler.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="307">
+              <caret line="265" column="20" selection-start-line="265" selection-start-column="13" selection-end-line="265" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -116,17 +123,26 @@
     </leaf>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/serverRest/.htaccess" />
-        <option value="$PROJECT_DIR$/serverRest/RestController.php" />
-        <option value="$PROJECT_DIR$/serverRest/testInternetHandler.php" />
+        <option value="$PROJECT_DIR$/messenger login/index.html" />
+        <option value="$PROJECT_DIR$/messenger login/formHandler.php" />
+        <option value="$PROJECT_DIR$/test.html" />
+        <option value="$PROJECT_DIR$/testPhp.php" />
+        <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/formHandler.php" />
         <option value="$PROJECT_DIR$/serverRest/user.php" />
-        <option value="$PROJECT_DIR$/serverRest/UserRestHandler.php" />
+        <option value="$PROJECT_DIR$/serverRest/messageRestHandler.php" />
         <option value="$PROJECT_DIR$/client/formHandler.php" />
+        <option value="$PROJECT_DIR$/serverRest/test.php" />
+        <option value="$PROJECT_DIR$/serverRest/MessageRestHandler.php" />
+        <option value="$PROJECT_DIR$/serverRest/RestController.php" />
+        <option value="$PROJECT_DIR$/serverRest/message.php" />
+        <option value="$PROJECT_DIR$/serverRest/.htaccess" />
       </list>
     </option>
   </component>
@@ -142,10 +158,10 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1003" />
+    <option name="width" value="1920" />
     <option name="height" value="1007" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -170,8 +186,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -192,14 +206,25 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="last_opened_file_path" value="/Applications/XAMPP/htdocs/restexample" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../restexample" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/messenger login" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -241,42 +266,49 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c84fb91c-7999-4e8f-9c96-d200e5fa78b0" name="Default" comment="" />
-      <created>1465399118477</created>
+      <changelist id="df6bf484-0fa6-40e3-967a-dcc800d024ce" name="Default" comment="" />
+      <created>1465039660564</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1465399118477</updated>
-      <workItem from="1465399119659" duration="1114000" />
-      <workItem from="1465400326939" duration="11850000" />
+      <updated>1465039660564</updated>
+      <workItem from="1465039662441" duration="132000" />
+      <workItem from="1465040581053" duration="1162000" />
+      <workItem from="1465046062125" duration="805000" />
+      <workItem from="1465047073000" duration="421000" />
+      <workItem from="1465047596036" duration="5090000" />
+      <workItem from="1465120012874" duration="281000" />
+      <workItem from="1465156027127" duration="3000" />
+      <workItem from="1465156043677" duration="21000" />
+      <workItem from="1465156070959" duration="4391000" />
+      <workItem from="1465167546056" duration="24000" />
+      <workItem from="1465191866561" duration="87000" />
+      <workItem from="1465192006094" duration="2985000" />
+      <workItem from="1465331416756" duration="1851000" />
+      <workItem from="1465387363290" duration="565000" />
+      <workItem from="1465393272049" duration="4019000" />
+      <workItem from="1465398317872" duration="782000" />
+      <workItem from="1465419258129" duration="109000" />
+      <workItem from="1465419402418" duration="694000" />
+      <workItem from="1465421995604" duration="869000" />
+      <workItem from="1465474864190" duration="18721000" />
+      <workItem from="1465540216400" duration="17108000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12964000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+    <option name="totallyTimeSpent" value="60221000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1003" height="1007" extended-state="0" />
+    <frame x="0" y="23" width="1920" height="1007" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2705515" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296146" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16134185" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19010124" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296146" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296146" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -284,9 +316,13 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32913843" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.php" />
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -300,111 +336,164 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/serverRest/.htaccess">
+    <entry file="file://$PROJECT_DIR$/messengerLogin/.idea/material-login-form (1).iml" />
+    <entry file="file://$PROJECT_DIR$/messengerLogin/.idea/modules.xml" />
+    <entry file="file://$PROJECT_DIR$/messengerLogin/.idea/workspace.xml" />
+    <entry file="file://$PROJECT_DIR$/config.rb" />
+    <entry file="file://$PROJECT_DIR$/formHandler.php" />
+    <entry file="file://$PROJECT_DIR$/index.html" />
+    <entry file="file://$PROJECT_DIR$/test.html" />
+    <entry file="file://$PROJECT_DIR$/testPhp.php" />
+    <entry file="file://$PROJECT_DIR$/css/style.css" />
+    <entry file="file://$PROJECT_DIR$/js/index.js" />
+    <entry file="file://$PROJECT_DIR$/messengerLogin/.idea/material-login-form (1).iml" />
+    <entry file="file://$PROJECT_DIR$/messengerLogin/.idea/modules.xml" />
+    <entry file="file://$PROJECT_DIR$/messengerLogin/.idea/workspace.xml" />
+    <entry file="file://$PROJECT_DIR$/config.rb" />
+    <entry file="file://$PROJECT_DIR$/formHandler.php" />
+    <entry file="file://$PROJECT_DIR$/index.html" />
+    <entry file="file://$PROJECT_DIR$/formHandler.php" />
+    <entry file="file://$PROJECT_DIR$/index.jade" />
+    <entry file="file://$PROJECT_DIR$/messenger login/README.txt" />
+    <entry file="file://$PROJECT_DIR$/messenger login/index.jade" />
+    <entry file="file://$PROJECT_DIR$/messenger login/index.html" />
+    <entry file="file://$PROJECT_DIR$/messenger login/formHandler.php" />
+    <entry file="file://$PROJECT_DIR$/messenger login/README.txt" />
+    <entry file="file://$PROJECT_DIR$/messenger login/index.jade" />
+    <entry file="file://$PROJECT_DIR$/messenger login/README.txt" />
+    <entry file="file://$PROJECT_DIR$/messenger login/index.jade" />
+    <entry file="file://$PROJECT_DIR$/messenger login/formHandler.php" />
+    <entry file="file://$PROJECT_DIR$/messenger login/index.html" />
+    <entry file="file://$PROJECT_DIR$/index.jade" />
+    <entry file="file://$PROJECT_DIR$/css/reset.css" />
+    <entry file="file://$PROJECT_DIR$/config.rb" />
+    <entry file="file://$PROJECT_DIR$/messengerLogin/.idea/workspace.xml" />
+    <entry file="file://$PROJECT_DIR$/messengerLogin/.idea/modules.xml" />
+    <entry file="file://$PROJECT_DIR$/messengerLogin/.idea/material-login-form (1).iml" />
+    <entry file="file://$PROJECT_DIR$/js/index.js" />
+    <entry file="file://$PROJECT_DIR$/css/style.css" />
+    <entry file="file://$PROJECT_DIR$/test.html" />
+    <entry file="file://$PROJECT_DIR$/index.html" />
+    <entry file="file://$PROJECT_DIR$/2VarianteMitIvAES_ECB_128.php" />
+    <entry file="file://$PROJECT_DIR$/formHandler.php" />
+    <entry file="file://$PROJECT_DIR$/testPhp.php" />
+    <entry file="file://$PROJECT_DIR$/client/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/serverRest/RestController.php">
+    <entry file="file://$PROJECT_DIR$/serverRest/SimpleRest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="780">
+          <caret line="52" column="20" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/serverRest/UserRestHandler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serverRest/user.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1465411296000" expanded="true" signature="774:860" ph="SELECT user_... " />
-            <marker date="1465411296000" expanded="true" signature="1236:1271" ph="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/formHandler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="124">
+          <caret line="48" column="51" selection-start-line="48" selection-start-column="51" selection-end-line="48" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/serverRest/test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serverRest/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="244">
+          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/serverRest/user.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="33" column="5" selection-start-line="28" selection-start-column="4" selection-end-line="33" selection-end-column="5" />
+        <state relative-caret-position="435">
+          <caret line="49" column="40" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="40" />
           <folding>
-            <marker date="1465411296000" expanded="true" signature="774:860" ph="SELECT user_... " />
-            <marker date="1465411296000" expanded="true" signature="1236:1271" ph="DELETE FROM " />
+            <element signature="e#6#62#0#PHP" expanded="true" />
+            <marker date="1465485212000" expanded="true" signature="774:873" ph="SELECT user_... " />
+            <marker date="1465485212000" expanded="true" signature="1249:1284" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/serverRest/UserRestHandler.php">
+    <entry file="file://$PROJECT_DIR$/serverRest/message.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="870">
-          <caret line="59" column="27" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
+        <state relative-caret-position="379">
+          <caret line="40" column="95" selection-start-line="40" selection-start-column="95" selection-end-line="40" selection-end-column="95" />
+          <folding>
+            <element signature="e#6#62#0#PHP" expanded="true" />
+            <marker date="1465564596000" expanded="true" signature="391:422" ph="SELECT messa... message" />
+            <marker date="1465564596000" expanded="true" signature="391:429" ph="SELECT messa... message" />
+            <marker date="1465564596000" expanded="true" signature="391:438" ph="SELECT messa... message" />
+            <marker date="1465564596000" expanded="true" signature="391:439" ph="SELECT messa... message" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/formHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="265" column="20" selection-start-line="265" selection-start-column="13" selection-end-line="265" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serverRest/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serverRest/MessageRestHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/serverRest/RestController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1155">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="420">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding>
+            <marker date="1465564301000" expanded="true" signature="3984:4261" ph="..." />
+            <marker date="1465564301000" expanded="true" signature="3991:4261" ph="..." />
+            <marker date="1465564301000" expanded="true" signature="3998:4261" ph="..." />
+            <marker date="1465564301000" expanded="true" signature="4005:4261" ph="..." />
+            <marker date="1465564301000" expanded="true" signature="4025:4261" ph="..." />
+            <marker date="1465564301000" expanded="true" signature="4032:4261" ph="..." />
+            <marker date="1465564301000" expanded="true" signature="5597:5659" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/serverRest/testInternetHandler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="39" column="3" selection-start-line="39" selection-start-column="3" selection-end-line="39" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/formHandler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="140" column="37" selection-start-line="140" selection-start-column="37" selection-end-line="140" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

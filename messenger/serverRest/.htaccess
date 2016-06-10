@@ -3,9 +3,49 @@ Options +FollowSymlinks
 RewriteEngine on
 
 # map neat URL to internal URL
-RewriteRule ^user/([0-9]+)/$  RestController.php?view=user&user_id=$1 [nc,qsa]
-RewriteRule ^user/list/$   RestController.php?view=userAll [nc,qsa]
-#RewriteRule ^user/message/([0-9]+)/$   RestController.php?view=messageSingle&message_id=$1 [nc,qsa]
-#RewriteRule ^user/message/list/$   RestController.php?view=messageAll
+RewriteRule ^reg   RestController.php?view=registration [nc,qsa]
 
-RewriteRule ^user/message/test/$   test.php?request=$1 [QSA,NC,L]
+RewriteRule ^login RestController.php?view=login [nc,qsa]
+
+RewriteRule ^([\w]+)/pub_key/([0-9]+)   RestController.php?view=pub_key&user_id=$1 [nc,qsa]
+
+RewriteRule ^([\w]+)/message/?([\w]+)?/?([0-9]+)?  RestController.php?view=messageGetPostDel&user_id1=$1&user_id2=$2&message_id=$3 [nc,qsa]
+
+RewriteRule ^([\w]+)/allmessage  RestController.php?view=messageDelAll&user_id1=$1&message_id=$2 [nc,qsa]
+
+RewriteRule ^([\w]+)/user$  RestController.php?view=delaccount&user_id=$1 [nc,qsa]
+
+
+
+
+#umgebungvariable
+
+
+
+
+
+
+
+
+
+#RewriteRule ^message/all/([0-9]+)/$   test.php?view=messageAll&user_id=$1 [nc,qsa]
+
+#RewriteRule ^message/([\w]+)/?([\w]+)? test.php?rubrik=$1&seite=$2
+
+#RewriteRule ^user/([0-9]+)/$  RestController.php?view=user&user_id=$1 [nc,qsa]
+
+
+#RewriteRule ^message/([\w]+)/?([\w]+)? test.php?rubrik=$1&seite=$2
+
+
+
+#RewriteRule ^user/([0-9]+)/$  RestController.php?view=user&user_id=$1 [nc,qsa]
+
+#RewriteRule ^user/([0-9]+)/$  RestController.php?view=user&user_id=$1 [nc,qsa]
+#RewriteRule ^user/list/$   RestController.php?view=userAll [nc,qsa]
+
+#RewriteRule ^message/all/([0-9]+)/$   RestController.php?view=messageAll&user_id=$1 [nc,qsa]
+
+
+#test
+#rubrik=$1
