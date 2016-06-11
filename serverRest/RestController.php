@@ -90,7 +90,7 @@ if ($method == 'POST' && $view == "login")
 }
 
 //Mockup server answer for /pub_key
-if ($method == 'POST' && $view == "pub_key")
+if ($method == 'GET' && $view == "pub_key")
 {
 	$id = 3;
 	$messageRestHandler = new MessageRestHandler();
@@ -100,18 +100,22 @@ if ($method == 'POST' && $view == "pub_key")
 
 
 //Mockup server answer for /messageGetPostDel
-if ($method == 'POST' && $view == "messageGetPostDel")
+if ($view == "messageGetPostDel")
 {
-	$id = 4;
-	$messageRestHandler = new MessageRestHandler();
-	$messageRestHandler->getMessage($id);
+	if($method == 'GET') {$id = 4;}
+	if($method == 'POST') {$id = 5;}
+	if($method == 'DELETE') {$id = 6;}
 
+
+		$messageRestHandler = new MessageRestHandler();
+		$messageRestHandler->getMessage($id);
 }
 
+
 //Mockup server answer for /messageDelAll
-if ($method == 'POST' && $view == "messageDelAll")
+if ($method == 'DELETE' && $view == "messageDelAll")
 {
-	$id = 5;
+	$id = 7;
 	$messageRestHandler = new MessageRestHandler();
 	$messageRestHandler->getMessage($id);
 
@@ -120,7 +124,7 @@ if ($method == 'POST' && $view == "messageDelAll")
 //Mockup server answer for /delaccount
 if ($method == 'POST' && $view == "delaccount")
 {
-	$id = 6;
+	$id = 8;
 	$messageRestHandler = new MessageRestHandler();
 	$messageRestHandler->getMessage($id);
 

@@ -37,9 +37,14 @@ Class Message{
         1 => 'hey, was geht!!  hier ist der Server von der Gruppe 4 ==> registration',
         2 => 'hey, was geht!!  hier ist der Server von der Gruppe 4 ==> login',
         3 => 'hey, was geht!!  hier ist der Server von der Gruppe 4 ==> pub_key',
-        4 => 'hey, was geht!!  hier ist der Server von der Gruppe 4 ==> message Get Post Delete',
-        5 => 'hey, was geht!!  hier ist der Server von der Gruppe 4 ==> delete all message',
-        6 => 'hey, was geht!!  hier ist der Server von der Gruppe 4 ==> delete account',
+        4 => 'hey, was geht!!  hier ist der Server von der Gruppe 4 ==> Get message',
+
+        5 => 'hey, was geht!!  hier ist der Server von der Gruppe 4 ==> Post message',
+        6 => 'hey, was geht!!  hier ist der Server von der Gruppe 4 ==> Delete message',
+
+
+        7 => 'hey, was geht!!  hier ist der Server von der Gruppe 4 ==> delete all message',
+        8 => 'hey, was geht!!  hier ist der Server von der Gruppe 4 ==> delete account',
     );
 
 

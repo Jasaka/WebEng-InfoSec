@@ -15,6 +15,8 @@ RewriteRule ^([\w]+)/allmessage  RestController.php?view=messageDelAll&user_id1=
 
 RewriteRule ^([\w]+)/user$  RestController.php?view=delaccount&user_id=$1 [nc,qsa]
 
+
+
 RewriteRule ^user/([0-9]+)/$  RestController.php?view=user&user_id=$1 [nc,qsa]
 
 RewriteRule ^allemessage/([0-9]+)/$   test.php?view=messageAll&user_id=$1 [nc,qsa]
