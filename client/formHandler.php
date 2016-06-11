@@ -261,7 +261,7 @@ echo $privkey_user_dec;
 
 
 
-$uri = "http://localhost/messenger/serverRest/message/all/";
+$uri = "http://localhost/messenger/serverRest/allemessage/1/";
 
 $response = \Httpful\Request::get($uri)
 
