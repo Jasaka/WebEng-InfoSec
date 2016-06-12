@@ -1,4 +1,9 @@
 <?php
+
+require 'vendor/autoload.php';
+
+
+
 require_once("UserRestHandler.php");
 require_once ("MessageRestHandler.php");
 
@@ -25,6 +30,11 @@ if(isset($_GET["message_id"]))
 $test_id = '';
 if(isset($_GET["test_id"]))
 	$request = $_GET["test_id"];
+
+
+$user_identityrec = '';
+if(isset($_GET["user_identityrec"]))
+	$user_identityrec = $_GET["user_identityrec"];
 
 
 
@@ -64,7 +74,14 @@ if($method == 'POST' && $view == "user" && $user_id != null)
 }
 
 
+//get pub_key from Db for reciever
+if ($method == 'GET' && $view == "pub_keyrec")
+{
 
+	$userRestHandler = new UserRestHandler();
+	$userRestHandler->getUserDbIdent($user_identityrec);
+
+}
 
 
 

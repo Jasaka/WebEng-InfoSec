@@ -1,6 +1,6 @@
 <?php
 
-//es funktioniert erst wenn mann ein masterkey mit PBKDF2 algor und Private  key... siehe messenger/formHandler.php
+//es funktioniert erst wenn mann ein masterkey mit PBKDF2 algor und Private  key... siehe messenger/formHandlerReg.php
 $privkey_user = "create privkey_user";
 $masterKey = "create masterkey";
 

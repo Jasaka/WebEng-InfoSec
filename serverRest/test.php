@@ -49,9 +49,20 @@ echo $user_id1;
 //echo $view;
 //
 //
-$user_id= "";
-if(isset($_GET["user_id"]))
-    $user_id = $_GET["user_id"];
+$user_identityrec = "";
+if(isset($_GET["user_identityrec"]))
+    $user_identityrec = $_GET["user_identityrec"];
+
+echo $user_identityrec;
+
+
+
+
+$user_identitysen = "";
+if(isset($_GET["user_identitysen"]))
+    $user_identitysen = $_GET["user_identitysen"];
+
+echo $user_identitysen;
 //
 //echo $user_id;
 
@@ -61,29 +72,29 @@ $method = $_SERVER['REQUEST_METHOD'];
 
 //echo $method;
 
-if ($method == 'GET')
-{
-    $mysqli = new mysqli("localhost", "root", "", "messenger");
+//if ($method == 'GET')
+//{
+//    $mysqli = new mysqli("localhost", "root", "", "messenger");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//    $result = $mysqli->query("SELECT message_txt FROM message WHERE user_id = $user_id");
+//    //$array = $result->fetch_assoc();
+//
+//    $json = mysqli_fetch_all ($result, MYSQLI_ASSOC);
+//    $message = json_encode($json );
+//
+//    echo $message;
 
 
 
-
-
-
-
-
-
-    $result = $mysqli->query("SELECT message_txt FROM message WHERE user_id = $user_id");
-    //$array = $result->fetch_assoc();
-
-    $json = mysqli_fetch_all ($result, MYSQLI_ASSOC);
-    $message = json_encode($json );
-
-    echo $message;
-
-
-
-}
+//}
 
 
 

@@ -5,6 +5,7 @@ A domain Class to demonstrate RESTful web services
 
 
 
+
 Class User {
 
     private $users = array(
@@ -46,6 +47,26 @@ Class User {
 
 
     }
+
+
+
+    //get user pubkey from DB using identity case sensitive
+    public function getUserDbIdent($user_identityrec)
+    {
+        $mysqli = $this->connectDb();
+
+
+        $result = $mysqli->query("SELECT pubkey_user FROM users WHERE identity = '$user_identityrec'");
+        $user = $result->fetch_assoc();
+        //$json = mysqli_fetch_all ($result, MYSQLI_ASSOC);
+        //$user = json_encode($json );
+        return $user;
+
+    }
+    
+    
+    
+    
 
     public function getMessage($user_id)
     {

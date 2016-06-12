@@ -1,4 +1,5 @@
 <?php
+
 require_once("SimpleRest.php");
 require_once("User.php");
 		
@@ -21,6 +22,16 @@ class UserRestHandler extends SimpleRest {
 	{
 		$user = new User();
 		$rawData = $user->getUserDb($user_id);
+
+		$this->response($rawData);
+	}
+
+
+	//get user pubkey by user identity ==> dynamisch
+	public function getUserDbIdent($user_identityrec)
+	{
+		$user = new User();
+		$rawData = $user->getUserDbIdent($user_identityrec);
 
 		$this->response($rawData);
 	}
