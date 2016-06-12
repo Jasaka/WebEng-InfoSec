@@ -12,6 +12,19 @@ class Crypto
         return $salt_masterkey;
     }
 
+    //create key_recipient with 128 Bit (16 Byte) long
+    public function getKey_recipient128()
+    {
+        $bytes = openssl_random_pseudo_bytes(16);
+        $key_recipient   = bin2hex($bytes);
+
+        //$key_recipient = pack('H*', $key_recipient );
+
+
+
+        return $key_recipient;
+    }
+
     //create und transform masterkey   PBKDF2 [password / salt / 256 Bit /  10000]
     public function getMasterkey($password, $salt_masterkey)
     {
@@ -79,6 +92,15 @@ class Crypto
     }
 
 
+    //create a random IV to use with CBC encoding
+    public function createIV()
+    {
+        $iv_size = mcrypt_get_iv_size(MCRYPT_RIJNDAEL_128, MCRYPT_MODE_CBC);
+        $iv = mcrypt_create_iv($iv_size, MCRYPT_RAND);
+        
+        return $iv;
+    }
+    
 
 }
 
