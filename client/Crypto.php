@@ -2,6 +2,17 @@
 
 class Crypto
 {
+    public $RSAresult;
+
+
+    function __construct()
+    {
+        //config RSA-2048 und and create Public Key and Private Keys
+        $configArray = array("digest_alg" => "sha512", "private_key_bits" => 2048, "private_key_type" => OPENSSL_KEYTYPE_RSA,);
+        $this->RSAresult = openssl_pkey_new($configArray);
+    }
+
+    
 
     //create salt_masterkey with 64 Bytes long
     public function getSaltMasterkey()
@@ -39,21 +50,21 @@ class Crypto
         return $masterKey;
     }
 
-    //config RSA-2048 und and create Public Key and Private Keys
-    public function createAllRSA()
-    {
-        $configArray = array("digest_alg" => "sha512", "private_key_bits" => 2048, "private_key_type" => OPENSSL_KEYTYPE_RSA,);
-        $res = openssl_pkey_new($configArray);
-
-        return $res;
-    }
+//    //config RSA-2048 und and create Public Key and Private Keys
+//    public function createAllRSA()
+//    {
+//        $configArray = array("digest_alg" => "sha512", "private_key_bits" => 2048, "private_key_type" => OPENSSL_KEYTYPE_RSA,);
+//        $this->RSAresult = openssl_pkey_new($configArray);
+//
+//        //return $res;
+//    }
 
     
     //get pubkey_user from createAllRSA()
     public function getPubkeyUser() 
     {
-        $res = $this->createAllRSA();
-        $pubkey_user = openssl_pkey_get_details($res);
+        //$this->RSAresult = $this->createAllRSA();
+        $pubkey_user = openssl_pkey_get_details($this->RSAresult);
         $pubkey_user = $pubkey_user["key"];
 
         return $pubkey_user;
@@ -63,8 +74,8 @@ class Crypto
     //get private key from createAllRSA()
     public function getPrivkeyUser()
     {
-        $res = $this->createAllRSA();
-        openssl_pkey_export($res, $privkey_user);
+        //$res = $this->createAllRSA();
+        openssl_pkey_export($this->RSAresult, $privkey_user);
 
         return $privkey_user;
     }
@@ -100,6 +111,21 @@ class Crypto
         
         return $iv;
     }
+
+
+
+
+    //compute signature with SHA-256
+    public function digiSign($data, $privkey_userDb)
+    {
+        openssl_sign($data, $signature, $privkey_userDb, "sha256");
+
+        return $signature;
+    }
+
+
+
+
     
 
 }

@@ -24,7 +24,6 @@ echo "<p></p>";
 $uri = "http://localhost/messenger/serverRest/user/2/";
 
 $response = \Httpful\Request::get($uri)
-    ->expectsJson()
     ->sendsJson()
     ->expectsJson()
     ->send();

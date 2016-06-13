@@ -64,19 +64,41 @@ echo "<p></p>";
 
 
 
-echo "<p> Nachricht mit Hilfe von AES-CBC-128 und key_recipient, iv zu Cipher verschlüsseln ==></p>";
+
 //encrypt the message with AES-CBC-128 + key_recipient + iv to Cipher
 $cipher = mcrypt_encrypt(MCRYPT_RIJNDAEL_128, $key_recipient, $message, MCRYPT_MODE_CBC, $iv);
+echo "<p> Nachricht mit Hilfe von AES-CBC-128 und key_recipient, iv zu Cipher verschlüsseln ==></p>";
 echo $cipher;
 echo "<p></p>";
 
 
 
-echo "<p> key_recipient mit Hilfe von RSA und pubkey_recipient zu key_recipient_enc verschlüsseln ==></p>";
+
+//just to test with another pubKey, it works ... ### but not with the pubkey what we did become via http request get.????????
+$pubkey_userTest = $crypto->getPubkeyUser();
+//echo "<p> pubkey zum testen ## neu geniriert   ==></p>";
+//echo $pubkey_userTest;
+//echo "<p></p>";
+
+
+
+//encrypt the key_recipient with RSA and pubkey_recipient
+echo "<p> key_recipient mit Hilfe von RSA und pubkey_recipient zu key_recipient_enc verschlüsseln ###  funktioniert nocht nicht problem mit dem importierten pubkey  pubkey_recipient==></p>";
 //encrypt the key_recipient with RSA and pubkey_recipient  to key_recipient_enc
 openssl_public_encrypt($key_recipient, $key_recipient_enc, $pubkey_recipient);
 echo $key_recipient_enc;   //encrypted string
 echo "<p></p>";
+
+
+//compute signature with SHA-256  ### have wi to do these for all Strings one by one "Nachrichtenpaket" ??   not forget the get the private Key from DB !!
+$privkey_userTest = $crypto->getPrivkeyUser();
+//echo $privkey_userTest;
+//compute signature with SHA-256
+$signature = $crypto->digiSign($message, $privkey_userTest);
+echo $signature;
+
+
+
 
 
 

@@ -35,7 +35,6 @@ echo "<p></p>";
 
 
 //create masterkey   PBKDF2 [password / salt / 256 Bit /  10000]
-
 $masterKey = $crypto->getMasterkey($password, $salt_masterkey);
 //echo "masterkey   PBKDF2 [password / salt / 256 Bit /  10000] ==> ";
 //echo "<p></p>";
@@ -43,24 +42,24 @@ $masterKey = $crypto->getMasterkey($password, $salt_masterkey);
 //echo "<p></p>";
 
 
-//create pubkey_user with RSA-2048
 
+//create pubkey_user with RSA-2048
 $pubkey_user = $crypto->getPubkeyUser();
 echo "<p> Public key </p>";
 echo $pubkey_user;
 echo "<p></p>";
 
 
-//create private key with RSA-2048
 
-//echo "<p> Private key normal </p>";
-//$privkey_user = $crypto->getPrivkeyUser();
-//echo $privkey_user;
-//echo "<p></p>";
+//create private key with RSA-2048
+$privkey_user = $crypto->getPrivkeyUser();
+echo "<p> Private key normal </p>";
+echo $privkey_user;
+echo "<p></p>";
+
 
 
 //get private key encrypted via AES-ECB-128 with masterkey and password
-
 $privkey_user_enc = $crypto->getPrivkeyUserEnc($password, $salt_masterkey);
 echo "privkey_user encrypted with AES-ECB-128 + masterkey ==> ";
 echo "<p></p>";
@@ -68,10 +67,10 @@ echo $privkey_user_enc;
 echo "<p></p>";
 
 
-//get $privkey_user_enc encrypted one more time via base64_encode ==> json and database compatible
 
-echo "<p>privkey_user_enc_base64</p>";
+//get $privkey_user_enc encrypted one more time via base64_encode ==> json and database compatible
 $privkey_user_enc_base64 = base64_encode($privkey_user_enc);
+echo "<p>privkey_user_enc_base64</p>";
 echo $privkey_user_enc_base64;
 echo "<p></p>";
 
