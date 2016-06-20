@@ -311,9 +311,10 @@ input.textarea {
     background: #fafafa;
     border: none;
     outline: none;
-    padding-left: 55px;
-    padding-right: 55px;
+    padding-left: 0px;
+    padding-right: 0px;
     color: #666;
+    background-color: red;
     font-weight: 400;
 }
 .emojis {
@@ -332,3 +333,27 @@ input.textarea {
 .emojis:active {
     opacity: 0.9;
 }
+
+textarea.textareamessage{
+    margin-top: 20px;
+    width: 100%;
+    height: 100px;
+    outline: none;
+    border: none;
+    font-size: 24px;
+}
+
+
+
+.card .input-container textarea:focus ~ label {
+    color: #9d9d9d;
+    -webkit-transform: translate(-12%, -50%) scale(0.75);
+    transform: translate(-12%, -50%) scale(0.75);
+}
+
+.card .input-container textarea:valid ~ label {
+    color: #9d9d9d;
+    -webkit-transform: translate(-12%, -50%) scale(0.75);
+    transform: translate(-12%, -50%) scale(0.75);
+}
+

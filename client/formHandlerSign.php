@@ -69,7 +69,7 @@ echo $privkey_user_encDb;
 
 
 //decode private key encrypted from DB @ base 64
-echo "<p> privkey_user_encDb_base64 enc bla bli ==></p>";
+echo "<p> privkey_user_encDb_base64 enc  ==></p>";
 $privatkey_encDb = base64_decode($privkey_user_encDb);
 echo $privatkey_encDb;
 

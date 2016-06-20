@@ -45,15 +45,17 @@ $masterKey = $crypto->getMasterkey($password, $salt_masterkey);
 
 //create pubkey_user with RSA-2048
 $pubkey_user = $crypto->getPubkeyUser();
-echo "<p> Public key </p>";
-echo $pubkey_user;
+echo "<p> Public key encode 64</p>";
+$pubkey_user_enc_base64 = base64_encode($pubkey_user);
+echo $pubkey_user_enc_base64;
 echo "<p></p>";
 
 
 
 //create private key with RSA-2048
 $privkey_user = $crypto->getPrivkeyUser();
-echo "<p> Private key normal </p>";
+echo "<p> Private key encode 64</p>";
+$privkey_user = base64_encode($privkey_user);
 echo $privkey_user;
 echo "<p></p>";
 
@@ -61,10 +63,10 @@ echo "<p></p>";
 
 //get private key encrypted via AES-ECB-128 with masterkey and password
 $privkey_user_enc = $crypto->getPrivkeyUserEnc($password, $salt_masterkey);
-echo "privkey_user encrypted with AES-ECB-128 + masterkey ==> ";
-echo "<p></p>";
-echo $privkey_user_enc;
-echo "<p></p>";
+//echo "privkey_user encrypted with AES-ECB-128 + masterkey ==> ";
+//echo "<p></p>";
+//echo $privkey_user_enc;
+//echo "<p></p>";
 
 
 
@@ -75,9 +77,29 @@ echo $privkey_user_enc_base64;
 echo "<p></p>";
 
 
+$postData = array(
+    'salt_masterkey'=> $salt_masterkey,
+    'pubkey_user'=> $pubkey_user_enc_base64,
+    '$privkey_user_enc'=> $privkey_user_enc_base64,
+    'identity'=> $identity,
+
+);
+
+//make a Request so we cann geht data from DB
+$uri = "http://localhost/messenger/serverRest/reg";
+
+$response = \Httpful\Request::post($uri)
+    ->sendsJson()
+    ->expectsJson()
+    ->body($postData)
+    ->send();
 
 
 
+
+echo "<p> Resopnse vom server</p>";
+var_dump($response);
+//echo $response;
 
 
 
