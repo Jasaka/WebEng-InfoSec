@@ -56,7 +56,14 @@ Class Message{
 
     }
 
+    //return request
+    public function getTest($request)
+    {
 
+        $data = $request;
+        return $data;
+
+    }
 
 
 

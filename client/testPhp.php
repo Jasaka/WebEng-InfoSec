@@ -3,24 +3,25 @@
 include ('/Users/youssefElOuatiq/phpLibrary/httpful.phar');
 require 'vendor/autoload.php';
 
+$masterKeyNew = '26b_�Q}�#���y�8(��,{�� �';
+$masterKeyNew = pack('H*', $masterKeyNew );
 
-echo "hello Word";
+$privatkey_encDb = "yabadabado";
+echo $privatkey_encDb;
 
-$fields = array(
-    'identity' => "identity",
-    'salt_masterkey' => "salt_masterkey",
-    'pubkey_user' => "pubkey_user",
-    'privkey_user_enc' => "privkey_user_enc");
+echo "<hr>";
 
-$uri = "http://localhost/messenger/serverRest/user/1/";
 
-$response = \Httpful\Request::post($uri)
-    ->sendsJson()
-    ->body(http_build_query($fields))
-    ->send();
+$crypted = mcrypt_encrypt(MCRYPT_RIJNDAEL_128, $masterKeyNew, $privatkey_encDb, MCRYPT_MODE_ECB);
 
-echo $response;
+echo $crypted;
+echo "<hr>";
 
+$decrypted = mcrypt_decrypt(MCRYPT_RIJNDAEL_128, $masterKeyNew, $privatkey_encDb, MCRYPT_MODE_ECB);
+
+
+echo $decrypted;
+echo "<hr>";
 
 ?>
 

@@ -1,120 +1,30 @@
 <?php
-
-
-
-//
-$message_id= "";
-if(isset($_GET["message_id"]))
-    $message_id = $_GET["message_id"];
-
-echo $message_id;
-////
-////
-////
-//
-////
-$user_id2= "";
-if(isset($_GET["user_id2"]))
-    $user_id2 = $_GET["user_id2"];
-
-
-echo $user_id2;
-//
-//
-//
-//
-$user_id1= "";
-if(isset($_GET["user_id1"]))
-    $user_id1 = $_GET["user_id1"];
-echo $user_id1;
-//
-//
-//
-//$rubrik= "";
-//if(isset($_GET["rubrik"]))
-//    $rubrik = $_GET["rubrik"];
-//
-////echo $rubrik;
-//
-//$seite= "";
-//if(isset($_GET["seite"]))
-//    $seite = $_GET["seite"];
-
-//echo $seite;
-
-//$view= "";
-//if(isset($_GET["view"]))
-//    $view = $_GET["view"];
-//
-//echo $view;
-//
-//
-$user_identityrec = "";
-if(isset($_GET["user_identityrec"]))
-    $user_identityrec = $_GET["user_identityrec"];
-
-echo $user_identityrec;
-
-
-
-
-$user_identitysen = "";
-if(isset($_GET["user_identitysen"]))
-    $user_identitysen = $_GET["user_identitysen"];
-
-echo $user_identitysen;
-//
-//echo $user_id;
+require_once("UserRestHandler.php");
+require_once ("MessageRestHandler.php");
 
 
 $method = $_SERVER['REQUEST_METHOD'];
 
+$para = $_POST['salt_masterkey'];
 
-//echo $method;
 
-//if ($method == 'GET')
-//{
-//    $mysqli = new mysqli("localhost", "root", "", "messenger");
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//    $result = $mysqli->query("SELECT message_txt FROM message WHERE user_id = $user_id");
-//    //$array = $result->fetch_assoc();
-//
-//    $json = mysqli_fetch_all ($result, MYSQLI_ASSOC);
-//    $message = json_encode($json );
-//
-//    echo $message;
+//$request = file_get_contents('php://input');
+
+
+$view = "";
+if(isset($_GET["view"]))
+    $view = $_GET["view"];
 
 
 
-//}
+//$request_body = @file_get_contents('php://input');
 
 
-
-
-
-    //print_r(array_values($user)) ;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+if($method == 'POST' && $view == "test" )
+{
+    $messageRestHandler = new MessageRestHandler();
+    $messageRestHandler->getTest($para);
+}
 
 
 

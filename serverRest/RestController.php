@@ -4,6 +4,14 @@ require 'vendor/autoload.php';
 
 
 
+
+
+
+
+
+
+
+
 require_once("UserRestHandler.php");
 require_once ("MessageRestHandler.php");
 
@@ -219,164 +227,6 @@ if($method == 'DELETE' && $view == "allemessage" && $user_id != null)
 
 
 
-
-
-
-
-///**
-// * Property: method
-// * The HTTP method this request was made in, either GET, POST, PUT or DELETE
-// */
-//$methodTest = '';
-//
-///**
-// * Property: endpoint
-// * The Model requested in the URI. eg: /files
-// */
-//$endpoint = '';
-//
-///**
-// * Property: verb
-// * An optional additional descriptor about the endpoint, used for things that can
-// * not be handled by the basic methods. eg: /files/process
-// */
-//$verb = '';
-//
-///**
-// * Property: args
-// * Any additional URI components after the endpoint and verb have been removed, in our
-// * case, an integer ID for the resource. eg: /<endpoint>/<verb>/<arg0>/<arg1>
-// * or /<endpoint>/<arg0>
-// */
-//$args = Array();
-//
-///**
-// * Property: file
-// * Stores the input of the PUT request
-// */
-//$file = Null;
-
-/*
-
-$userRestHandler = new UserRestHandler();
-$userRestHandler->getRequest();
-
-*/
-
-/*
-
-$methodTest = $_SERVER['REQUEST_METHOD'];
-
-$args = explode('/', rtrim($request, '/'));
-
-$endpoint = array_shift($args);
-
-if (array_key_exists(0, $args) && !is_numeric($args[0]))
-{
-	$verb = array_shift($this->args);
-}
-
-$userRestHandler = new UserRestHandler();
-$userRestHandler->getRequest($methodTest,$endpoint, $verb, $args);
-
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-
-switch($method)
-{
-
-	case 'POST':
-
-		$userRestHandler = new UserRestHandler();
-		$userRestHandler->getMessage($user_id);
-		break;
-
-	case 'Delete':
-		$userRestHandler = new UserRestHandler();
-		$userRestHandler->deleteUserDb($user_id);
-		break;
-
-
-}
-
-
-
-
-
-
-
-//löschen
-/*
-
-//$method = '';
-$method = $_SERVER['REQUEST_METHOD'];
-//Löschen
-/*if ($method == 'POST' && array_key_exists('HTTP_X_HTTP_METHOD', $_SERVER)) {
-	if ($_SERVER['HTTP_X_HTTP_METHOD'] == 'DELETE') {
-		$method = 'DELETE';
-	} else if ($_SERVER['HTTP_X_HTTP_METHOD'] == 'PUT') {
-		$method = 'PUT';
-	else if ($_SERVER['HTTP_X_HTTP_METHOD'] == 'GET') {
-			$method = 'GET';
-	} else {
-		throw new Exception("Unexpected Header");
-	}
-}
-*/
-
-
-
-
-		
-//löschen
-/*
-controls the RESTful services
-URL mapping
-*/
-/*
-switch($view){
-
-	case "all":
-		// to handle REST Url /user/list/
-		$userRestHandler = new UserRestHandler();
-		$userRestHandler->getAllUser();
-		break;
-
-	case "" :
-		//404 - not found;
-		break;
-
-	case "user":
-		// to handle REST Url /user/show/<id>/
-		$userRestHandler = new UserRestHandler();
-		if($method == 'GET')
-		{
-			$userRestHandler->getUserDb($_GET["user_id"]);
-			break;
-		}
-		else if($method == 'DELETE')
-		{
-			$userRestHandler->deleteUserDb($_GET["user_id"]);
-			break;
-		}
-}
-
-*/
 
 
 ?>

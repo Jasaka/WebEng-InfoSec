@@ -40,8 +40,17 @@ class MessageRestHandler extends SimpleRest {
 
         $this->response($rawData);
     }
-    
-    
+
+
+    //return request test
+    public function getTest($request_body)
+    {
+        $message = new Message();
+        $rawData = $message->getTest($request_body);
+
+        $this->response($rawData);
+    }
+
     
     
     

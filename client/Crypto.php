@@ -97,9 +97,15 @@ class Crypto
     //get private key encrypted via AES-ECB-128 with masterkey
     public function getPrivkeyUserDec($masterKeyNew, $privatkey_encDb)
     {
-        $privkey_user_dec = mcrypt_decrypt(MCRYPT_RIJNDAEL_128, $masterKeyNew, $privatkey_encDb, MCRYPT_MODE_ECB);
-        
-        return $privkey_user_dec;
+        if(mcrypt_decrypt(MCRYPT_RIJNDAEL_128, $masterKeyNew, $privatkey_encDb, MCRYPT_MODE_ECB) == true)
+        {
+            return mcrypt_decrypt(MCRYPT_RIJNDAEL_128, $masterKeyNew, $privatkey_encDb, MCRYPT_MODE_ECB);
+        }
+
+        else
+        {
+            return false;
+        }
     }
 
 

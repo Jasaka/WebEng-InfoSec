@@ -74,7 +74,7 @@ $privkey_user_enc = $crypto->getPrivkeyUserEnc($password, $salt_masterkey);
 $privkey_user_enc_base64 = base64_encode($privkey_user_enc);
 echo "<p>privkey_user_enc_base64</p>";
 echo $privkey_user_enc_base64;
-echo "<p></p>";
+echo "<hr>";
 
 
 $postData = array(
@@ -86,21 +86,25 @@ $postData = array(
 );
 
 //make a Request so we cann geht data from DB
-$uri = "http://localhost/messenger/serverRest/reg";
+$uri = "http://localhost/messenger/serverRest/test";
 
 $response = \Httpful\Request::post($uri)
     ->sendsJson()
     ->expectsJson()
-    ->body($postData)
+    ->addHeader('salt_masterkey', $salt_masterkey)
     ->send();
 
 
 
 
 echo "<p> Resopnse vom server</p>";
-var_dump($response);
-//echo $response;
+//var_dump($response);
 
+$response = json_decode($response, true);
+
+//$myresponse = json_decode($response,true);
+
+print_r($response);
 
 
 

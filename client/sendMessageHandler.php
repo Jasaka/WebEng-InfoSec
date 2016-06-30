@@ -55,7 +55,7 @@ $crypto = new Crypto();
 $key_recipient = $crypto->getKey_recipient128();
 //echo "<p> symmetrischer Schlüssel key_recipient der Länge 128 bit ==></p>";
 echo $key_recipient;
-echo "<hr>";
+echo "<br>key_recipient<hr>";
 
 
 
@@ -80,7 +80,7 @@ $cipher = mcrypt_encrypt(MCRYPT_RIJNDAEL_128, $key_recipient, $message, MCRYPT_M
 openssl_public_encrypt($key_recipient, $key_recipient_enc, $pubkey_recipient);
 $key_recipient_enc = base64_encode($key_recipient_enc);
 echo $key_recipient_enc;   //encrypted string
-echo "<hr>";
+echo "<br>key_recipient_enc<hr>";
 
 
 
@@ -123,36 +123,43 @@ echo "<hr>";
 $identity = "mounir";  //identität müssen wir dynamisch abfangen können (session, angemeldet ... auf die post variablen zugreifen)
 
 //concate all the variable need to create a digi Signature       ist das richtig so ??
-$signData = $identity.$cipher.$iv.$key_recipient_enc;
+$signData1 = $identity.$cipher.$iv.$key_recipient_enc;
 
 
 
 ////compute signature with SHA-256  ### have wi to do these for all Strings one by one "Nachrichtenpaket" ??
 //compute signature with SHA-256 and privkey_user
-$signature = base64_encode($crypto->digiSign($signData, $privkey_user_dec));
-echo $signature;
+$sig_recipient = base64_encode($crypto->digiSign($signData1, $privkey_user_dec));
+echo "hier ist die Signature==>     ".$sig_recipient;
 echo "<hr>";
 
 //wie setzt man das prinzip von inner und außere Umschlag um
 
 
 //packege of the Message  ==>  ich glaube dass das nicht richtig ist ??!!
-$messagePackage = array(
-    'identität'=> $identity,
-    'cipher'=> $cipher,
-    'iv'=> $iv,
-    'key_recipient_enc'=> $key_recipient_enc,
-    'sig_recipient'=> $signature,
-);
+//$messagePackage = array(
+//    'identity'=> $identity,
+//    'cipher'=> $cipher,
+//    'iv'=> $iv,
+//    'key_recipient_enc'=> $key_recipient_enc,
+//    'sig_recipient'=> $signature,
+//);
 
 
-
+//get unix timestamp
 $timestamp = time();
 echo $timestamp;
+echo "<hr>";
 
 
+//äußere Umschlag bilden
+$signData2 = $signData1.$key_recipient_enc.$timestamp.$identity;
 
 
+//compute signature with SHA-256 and privkey_user
+$sig_service = base64_encode($crypto->digiSign($signData2, $privkey_user_dec));
+echo "hier ist die Signature sig_service==>     ".$sig_service;
+echo "<hr>";
 
 
 
