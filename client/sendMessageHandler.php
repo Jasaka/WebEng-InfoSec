@@ -22,7 +22,7 @@ $message = $_POST['message'];
 
 //
 //make a Request so we cann geht data from DB  ([\w]+)/pub_key/([\w]+)
-$uri = "http://localhost/messenger/serverRest/youssef/pub_key/mounir";
+$uri = "http://localhost/messenger/serverRest/youssef/pub_key/$reciever";
 
 $response = \Httpful\Request::get($uri)
     ->expectsJson()
@@ -78,7 +78,7 @@ $cipher = mcrypt_encrypt(MCRYPT_RIJNDAEL_128, $key_recipient, $message, MCRYPT_M
 
 //encrypt the key_recipient with RSA and pubkey_recipient  to key_recipient_enc + base64_encode
 openssl_public_encrypt($key_recipient, $key_recipient_enc, $pubkey_recipient);
-$key_recipient_enc = base64_encode($key_recipient_enc);
+//$key_recipient_enc = base64_encode($key_recipient_enc);
 echo $key_recipient_enc;   //encrypted string
 echo "<br>key_recipient_enc<hr>";
 

@@ -111,7 +111,7 @@ if (!$signsuccess)
 
 else
 {
-    header("Location: chat.html");
+    header("Location: chat.php");
     exit;
 }
 
