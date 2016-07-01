@@ -18,10 +18,10 @@ class UserRestHandler extends SimpleRest {
 	}
 
 	//get user by user_id ==> dynamisch
-	public function getUserDb($user_id)
+	public function getUserDb($identity)
 	{
 		$user = new User();
-		$rawData = $user->getUserDb($user_id);
+		$rawData = $user->getUserDb($identity);
 
 		$this->response($rawData);
 	}

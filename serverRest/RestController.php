@@ -23,6 +23,10 @@ $user_id = "";
 if(isset($_GET["user_id"]))
 	$user_id = $_GET["user_id"];
 
+$identity= "";
+if(isset($_GET["identity"]))
+	$user_id = $_GET["identity"];
+
 //muss noch gestezt werden  
 $password = "";
 
@@ -60,10 +64,10 @@ $method = $_SERVER['REQUEST_METHOD'];
 
 
 //get user
-if($method == 'GET' && $view == "user" && $user_id != null)
+if($method == 'GET' && $view == "user" && $identity != null)
 {
 	$userRestHandler = new UserRestHandler();
-	$userRestHandler->getUserDb($user_id);
+	$userRestHandler->getUserDb($identity);
 }
 
 //delete user

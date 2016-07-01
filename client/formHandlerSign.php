@@ -21,7 +21,7 @@ $password = $_POST['password'];
 
 
 //make a Request so we cann geht data from DB
-$uri = "http://localhost/messenger/serverRest/user/1/";
+$uri = "http://localhost/messenger/serverRest/user/$identity/";
 
 $response = \Httpful\Request::get($uri)
     ->sendsJson()

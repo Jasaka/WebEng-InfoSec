@@ -35,12 +35,12 @@ Class User {
     }
 
     //get user from DB using id
-    public function getUserDb($user_id)
+    public function getUserDb($identity)
     {
         $mysqli = $this->connectDb();
 
 
-        $result = $mysqli->query("SELECT user_id, identity, salt_masterkey, privkey_user_enc, pubkey_user FROM users WHERE user_id = $user_id");
+        $result = $mysqli->query("SELECT user_id, identity, salt_masterkey, privkey_user_enc, pubkey_user FROM users WHERE identity = '$identity'");
         $user = $result->fetch_assoc();
         //$user = $row['user_id']." ".$row['identity']." ".$row['salt_masterkey'];
         return $user;
