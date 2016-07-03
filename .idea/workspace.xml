@@ -3,11 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="df6bf484-0fa6-40e3-967a-dcc800d024ce" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/formHandlerSign.php" afterPath="$PROJECT_DIR$/client/formHandlerSign.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/sendMessageHandler.php" afterPath="$PROJECT_DIR$/client/sendMessageHandler.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/serverRest/.htaccess" afterPath="$PROJECT_DIR$/serverRest/.htaccess" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/serverRest/RestController.php" afterPath="$PROJECT_DIR$/serverRest/RestController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/serverRest/UserRestHandler.php" afterPath="$PROJECT_DIR$/serverRest/UserRestHandler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/serverRest/user.php" afterPath="$PROJECT_DIR$/serverRest/user.php" />
     </list>
     <ignored path="messenger.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,18 +30,8 @@
       <file leaf-file-name=".htaccess" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/serverRest/.htaccess">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserRestHandler.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/serverRest/UserRestHandler.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+            <state relative-caret-position="300">
+              <caret line="20" column="58" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -52,32 +40,42 @@
       <file leaf-file-name="RestController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/serverRest/RestController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="69" column="41" selection-start-line="69" selection-start-column="41" selection-end-line="69" selection-end-column="41" />
+            <state relative-caret-position="37">
+              <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserRestHandler.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/serverRest/UserRestHandler.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/serverRest/user.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
               <caret line="42" column="144" selection-start-line="42" selection-start-column="144" selection-end-line="42" selection-end-column="144" />
               <folding>
-                <marker date="1467399763000" expanded="true" signature="776:887" ph="SELECT user_... " />
-                <marker date="1467399763000" expanded="true" signature="1241:1307" ph="SELECT pubke... users" />
-                <marker date="1467399763000" expanded="true" signature="1710:1745" ph="DELETE FROM " />
+                <marker date="1467540540000" expanded="true" signature="776:887" ph="SELECT user_... " />
+                <marker date="1467540540000" expanded="true" signature="1241:1307" ph="SELECT pubke... users" />
+                <marker date="1467540540000" expanded="true" signature="1710:1745" ph="DELETE FROM " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sendMessageHandler.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="sendMessageHandler.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/sendMessageHandler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="71" selection-start-line="24" selection-start-column="71" selection-end-line="24" selection-end-column="71" />
+            <state relative-caret-position="619">
+              <caret line="165" column="0" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -86,7 +84,7 @@
       <file leaf-file-name="chat.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/chat.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
+            <state relative-caret-position="2580">
               <caret line="172" column="6" selection-start-line="172" selection-start-column="6" selection-end-line="179" selection-end-column="0" />
               <folding />
             </state>
@@ -96,7 +94,7 @@
       <file leaf-file-name="formHandlerSign.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/formHandlerSign.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
+            <state relative-caret-position="-11">
               <caret line="23" column="60" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
               <folding />
             </state>
@@ -165,14 +163,14 @@
         <option value="$PROJECT_DIR$/serverRest/test.php" />
         <option value="$PROJECT_DIR$/client/Crypto.php" />
         <option value="$PROJECT_DIR$/client/testPhp.php" />
-        <option value="$PROJECT_DIR$/client/sendMessageHandler.php" />
         <option value="$PROJECT_DIR$/client/chat.html" />
         <option value="$PROJECT_DIR$/client/chat.php" />
         <option value="$PROJECT_DIR$/client/formHandlerSign.php" />
-        <option value="$PROJECT_DIR$/serverRest/.htaccess" />
-        <option value="$PROJECT_DIR$/serverRest/RestController.php" />
         <option value="$PROJECT_DIR$/serverRest/UserRestHandler.php" />
         <option value="$PROJECT_DIR$/serverRest/user.php" />
+        <option value="$PROJECT_DIR$/serverRest/RestController.php" />
+        <option value="$PROJECT_DIR$/serverRest/.htaccess" />
+        <option value="$PROJECT_DIR$/client/sendMessageHandler.php" />
       </list>
     </option>
   </component>
@@ -187,10 +185,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1280" />
-    <option name="y" value="371" />
-    <option name="width" value="1280" />
-    <option name="height" value="800" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -217,6 +213,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -256,7 +253,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -358,21 +354,21 @@
       <workItem from="1466604113170" duration="2047000" />
       <workItem from="1467299830672" duration="8710000" />
       <workItem from="1467398000139" duration="1729000" />
+      <workItem from="1467540564425" duration="420000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144672000" />
+    <option name="totallyTimeSpent" value="145092000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1280" y="371" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22374798" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2257721" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10873984" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -383,6 +379,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10873984" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -541,7 +538,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -578,47 +574,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/chat.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
+        <state relative-caret-position="2580">
           <caret line="172" column="6" selection-start-line="172" selection-start-column="6" selection-end-line="179" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/sendMessageHandler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="71" selection-start-line="24" selection-start-column="71" selection-end-line="24" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/formHandlerSign.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="23" column="60" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serverRest/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serverRest/RestController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="69" column="41" selection-start-line="69" selection-start-column="41" selection-end-line="69" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/serverRest/UserRestHandler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
+        <state relative-caret-position="390">
           <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
           <folding />
         </state>
@@ -629,10 +593,42 @@
         <state relative-caret-position="300">
           <caret line="42" column="144" selection-start-line="42" selection-start-column="144" selection-end-line="42" selection-end-column="144" />
           <folding>
-            <marker date="1467399763000" expanded="true" signature="776:887" ph="SELECT user_... " />
-            <marker date="1467399763000" expanded="true" signature="1241:1307" ph="SELECT pubke... users" />
-            <marker date="1467399763000" expanded="true" signature="1710:1745" ph="DELETE FROM " />
+            <marker date="1467540540000" expanded="true" signature="776:887" ph="SELECT user_... " />
+            <marker date="1467540540000" expanded="true" signature="1241:1307" ph="SELECT pubke... users" />
+            <marker date="1467540540000" expanded="true" signature="1710:1745" ph="DELETE FROM " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serverRest/RestController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serverRest/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="58" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/formHandlerSign.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11">
+          <caret line="23" column="60" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/sendMessageHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="619">
+          <caret line="165" column="0" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

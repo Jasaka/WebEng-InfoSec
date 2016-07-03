@@ -25,7 +25,7 @@ if(isset($_GET["user_id"]))
 
 $identity= "";
 if(isset($_GET["identity"]))
-	$user_id = $_GET["identity"];
+	$identity = $_GET["identity"];
 
 //muss noch gestezt werden  
 $password = "";

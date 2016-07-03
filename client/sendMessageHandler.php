@@ -83,10 +83,10 @@ echo $key_recipient_enc;   //encrypted string
 echo "<br>key_recipient_enc<hr>";
 
 
-
+$identity = 'john';
 
 //make a Request so we cann geht data from DB
-$uri = "http://localhost/messenger/serverRest/user/1/";
+$uri = "http://localhost/messenger/serverRest/user/$identity/";
 
 $response = \Httpful\Request::get($uri)
     ->sendsJson()
