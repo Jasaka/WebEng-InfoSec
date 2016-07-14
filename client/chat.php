@@ -44,7 +44,7 @@ require 'vendor/autoload.php';
         <h1 class="title">Nachricht senden</h1>
 
 
-        <form action="" method="post">
+        <form action="sendMessageHandler.php" method="post">
             <div class="input-container">
                 <input type="text" name="reciever" id="reciever"  required="required"/>
                 <label for="reciever">Empfänger</label>

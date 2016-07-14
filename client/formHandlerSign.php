@@ -28,11 +28,13 @@ $response = \Httpful\Request::get($uri)
     ->expectsJson()
     ->send();
 
-//echo "<p> Resopnse vom server</p>";
-//echo $response;
+echo "<p> Resopnse vom server</p>";
+echo $response;
+echo "<hr>";
 
-//echo "<p> Resopnse details </p>";
-//var_dump($response);
+echo "<p> Resopnse details </p>";
+var_dump($response);
+echo "<hr>";
 
 
 //decode the response to json
@@ -41,37 +43,43 @@ $myresponse = json_decode($response,true);
 
 
 //extract data from response
-//echo "<p> hier bin ich / Alle imoprtierten variablen vom Response </p>";
+echo "<p> hier bin ich / Alle imoprtierten variablen vom Response </p>";
 
-//echo "<p> user_id ==></p>";
+echo "<p> user_id ==></p>";
 $user_idDb = $myresponse['user_id'];
-//echo $user_idDb;
+echo $user_idDb;
+echo "<hr>";
 
 
-//echo "<p> identity  ==></p>";
+echo "<p> identity  ==></p>";
 $identityDb = $myresponse['identity'];
-//echo $identityDb;
+echo $identityDb;
+echo "<hr>";
 
 
-//echo "<p> salt_masterkey  ==></p>";
+echo "<p> salt_masterkey  ==></p>";
 $salt_masterkeyDb = $myresponse['salt_masterkey'];
-//echo $salt_masterkeyDb;
+echo $salt_masterkeyDb;
+echo "<hr>";
 
 
-//echo "<p> pubkey_user  ==></p>";
+echo "<p> pubkey_user  ==></p>";
 $pubkey_userDb = $myresponse['pubkey_user'];
-//echo $pubkey_userDb;
+echo $pubkey_userDb;
+echo "<hr>";
 
 
-//echo "<p> privkey_user_encDb  Datenbank</p>";
+echo "<p> privkey_user_encDb  Datenbank</p>";
 $privkey_user_encDb = $myresponse['privkey_user_enc'];
-//echo $privkey_user_encDb;
+echo $privkey_user_encDb;
+echo "<hr>";
 
 
 //decode private key encrypted from DB @ base 64
-//echo "<p> privkey_user_encDb_base64 enc  ==></p>";
+echo "<p> privkey_user_encDb_base64 decode  ==></p>";
 $privatkey_encDb = base64_decode($privkey_user_encDb);
-//echo $privatkey_encDb;
+echo $privatkey_encDb;
+echo "<hr>";
 
 
 //create Instance of class Crypto
@@ -80,40 +88,44 @@ $crypto = new Crypto();
 
 
 //create masterkey   PBKDF2 [password / salt / 256 Bit /  10000]
-//echo "<p>masterkey wieder bilden ===></p>";
+echo "<p>masterkey wieder bilden ===></p>";
 $masterKeyNew = $crypto->getMasterkey($password, $salt_masterkeyDb);
-//echo "masterkey   PBKDF2 [password / salt / 256 Bit /  10000] ==>     ". $masterKeyNew;
-
+echo "masterkey   PBKDF2 [password / salt / 256 Bit /  10000] ==>     ". $masterKeyNew;
+echo "<hr>";
 
 
 
 # --- DECRYPTION ---  private key
-//echo "<p>privatkey wieder entschlüsselt ===></p>";
+echo "<p>privatkey wieder entschlüsselt ===></p>";
 $privkey_user_dec = $crypto->getPrivkeyUserDec($masterKeyNew,$privatkey_encDb);
-//echo $privkey_user_dec;
-//echo "<hr>";
+echo $privkey_user_dec;
+echo "<hr>";
 
 
-if (strpos($privkey_user_dec, 'BEGIN PRIVATE KEY') !== false)
-{
-    $signsuccess = true;
-}
-else
-{
-    $signsuccess = false;
-}
+
+//dekomentieren wegen der Passwort Überprüfung und weiterleitung
 
 
-if (!$signsuccess)
-{
-    echo 'Das von dir eingegebene Passwort oder identität ist falsch !!!';
-}
-
-else
-{
-    header("Location: chat.php");
-    exit;
-}
-
+//if (strpos($privkey_user_dec, 'BEGIN PRIVATE KEY') !== false)
+//{
+//    $signsuccess = true;
+//}
+//else
+//{
+//    $signsuccess = false;
+//}
+//
+//
+//if (!$signsuccess)
+//{
+//    echo 'Das von dir eingegebene Passwort oder identität ist falsch !!!';
+//}
+//
+//else
+//{
+//    header("Location: chat.php");
+//    exit;
+//}
+//
 
 
